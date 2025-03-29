@@ -1,0 +1,56 @@
+.contact {
+  width: 370px;
+
+  h1 {
+    justify-self: center;
+    margin-bottom: 25px;
+  }
+
+  .disabled {
+    justify-self: center;
+    margin-bottom: 15px;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .form {
+    margin-bottom: 20px;
+
+    input {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-width: 370px;
+      max-width: 370px;
+      min-height: 150px;
+      max-height: 200px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+
+      button {
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-color: #a19c93;
+        color: white;
+        font-size: 16px;
+        /* cursor: pointer; */
+      }
+    }
+  }
+}
