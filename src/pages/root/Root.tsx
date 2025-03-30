@@ -23,11 +23,16 @@ export default function RootLayout() {
     return () => {
       document.body.className = "";
     };
-
   }, [location.pathname]);
 
   return (
     <>
+      <div className={`${classes.circles} ${classes.circle1}`}></div>
+      <div className={`${classes.circles} ${classes.circle2}`}></div>
+      <div className={`${classes.circles} ${classes.circle3}`}></div>
+      <div className={`${classes.circles} ${classes.circle4}`}></div>
+      <div className={`${classes.circles} ${classes.circle5}`}></div>
+      <div className={`${classes.circles} ${classes.circle6}`}></div>
       <MainNavigation />
       <main className={classes.root}>
         <Outlet />

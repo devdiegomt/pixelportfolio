@@ -7,10 +7,10 @@
 
   .box {
     // updating to grid
-    border-radius: 15px;
-    height: 350px;
-    width: 370px;
-    background: linear-gradient(#2f3d59, #0b1326);
+    border-radius: 50px;
+    height: 360px;
+    width: 470px;
+    background: linear-gradient(to bottom, #738DFB, #09114F);
     color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -83,14 +83,14 @@
       h2 {
         margin-top: 14px;
         font-weight: 600;
-        font-size: x-large;
+        font-size: xx-large;
       }
     }
 
     .bx4 {
       grid-area: bx4;
       .social {
-        margin-top: 12px;
+        margin-top: 35px;
         display: flex;
         height: 72px;
 

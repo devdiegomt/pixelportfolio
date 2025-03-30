@@ -8,9 +8,6 @@ import Certifications from "../../molecules/certifications/Certifications";
 export default function Profile() {
   return (
     <div className={classes.profile}>
-      <h1>Professional Profile</h1>
-      <p>Software engineer</p>
-      <hr />
       <h3>Education</h3>
       <div className={classes.edu}>
         <img
