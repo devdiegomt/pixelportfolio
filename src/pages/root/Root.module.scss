@@ -16,10 +16,10 @@
 }
 
 .circle1 {
-  width: 300px;
-  height: 300px;
-  top: -150px;
-  left: -150px;
+  width: 562px;
+  height: 562px;
+  top: -320px;
+  left: -320px;
 }
 .circle2 {
   width: 145px;
@@ -40,22 +40,20 @@
   left: 550px;
 }
 .circle5 {
-  width: 250px;
-  height: 250px;
-  top: 50px;
-  left: 600px;
+  width: 662px;
+  height: 662px;
+  top: 1540px;
+  left: -580px;
 }
 .circle6 {
   width: 170px;
   height: 170px;
-  top: 350px;
-  left: 700px;
+  top: 2540px;
+  left: 500px;
 }
 
 @media (min-width: 620px) {
   .circle1 {
-    width: 562px;
-    height: 562px;
     top: -240px;
     left: -310px;
   }
@@ -66,13 +64,10 @@
     left: 1370px;
   }
   .circle5 {
-    width: 662px;
-    height: 662px;
     top: 1540px;
     left: -480px;
   }
   .circle6 {
-    top: 2540px;
     left: 1300px;
   }
 }
