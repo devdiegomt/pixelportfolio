@@ -56,9 +56,15 @@
     .home-page {
       background: linear-gradient(to bottom, #1618cd 0%, #1417c1 30%);
     }
-
+    
     .projects-page {
-      background-color: #1ce6e9;
+      background: linear-gradient(to bottom, #2e96b9 0%, #3579a7 30%);
+    }
+
+    @media (min-width: 950px) {
+      .projects-page {
+        background: linear-gradient(to bottom, #3a6299 0%, #472976 120%);
+      }
     }
 
     .cv-page {
