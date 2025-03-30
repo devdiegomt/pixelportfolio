@@ -8,6 +8,8 @@ import ContactPage from "./pages/contact/Contact";
 import ErrorPage from "./pages/error/Error";
 import ProjectDetailPage from "./pages/projects/ProjectDetail";
 
+import './index.scss'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +25,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default function App() {
+export default function App() {  
   return (
     <>
       <RouterProvider router={router} />

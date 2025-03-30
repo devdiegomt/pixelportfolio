@@ -13,19 +13,29 @@ import { motion } from "framer-motion";
 // Data
 import { SOCIAL_IMAGES } from "../../../config/social-images";
 import { NAV_ITEMS } from "../../../config/navigation";
+import { useLocation } from "react-router-dom";
 
 export default function MainNavigation() {
+  const location = useLocation();
+
+  const pathClass =
+    location.pathname === "/"
+      ? classes["home-page"]
+      : location.pathname === "/cv"
+      ? classes["cv-page"]
+      : location.pathname === "/contact"
+      ? classes["contact-page"]
+      : location.pathname === "/projects"
+      ? classes["projects-page"]
+      : classes["default-page"];
 
   return (
     <header className={classes.header}>
       <Quotes />
       <div className={classes.box}>
-        <div className={classes.p1}>
+        <div className={`${classes.p1} ${pathClass}`}>
           <div className={classes.profile}>
-            <img
-              src={profileImg}
-              alt="Profile image"
-            />
+            <img src={profileImg} alt="Profile image" />
           </div>
         </div>
         <div className={classes.bx3}>

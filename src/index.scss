@@ -9,17 +9,50 @@
 
 body {
   margin: 0;
-  background: radial-gradient(
-      circle at top left,
-      $background-200 -15%,
-      transparent 33%
-    ),
-    linear-gradient(to top, $background-300 -15%, transparent 15%)
-      $background-100;
   background-attachment: fixed;
 }
 
-@media (max-width: 1200px) {
+.home-page {
+  background: linear-gradient(
+    to bottom,
+    $background-top1 0%,
+    $background-mid1 20%,
+    $background-mid1 80%,
+    $background-btm 100%
+  );
+}
+
+.projects-page {
+  background: linear-gradient(
+    to bottom,
+    $background-top2 0%,
+    $background-mid2 20%,
+    $background-mid2 80%,
+    $background-btm 100%
+  );
+}
+
+.cv-page {
+  background: linear-gradient(
+    to bottom,
+    $background-top3 0%,
+    $background-mid3 20%,
+    $background-mid3 80%,
+    $background-btm 100%
+  );
+}
+
+.contact-page {
+  background: linear-gradient(
+    to bottom,
+    $background-top4 0%,
+    $background-mid4 20%,
+    $background-mid4 80%,
+    $background-btm 100%
+  );
+}
+
+/* @media (max-width: 1200px) {
   body {
     margin: 0;
     background: radial-gradient(
@@ -31,4 +64,4 @@ body {
         $background-100;
     background-attachment: fixed;
   }
-}
+} */

@@ -25,12 +25,8 @@
 
     .p1 {
       grid-area: p1;
-      background: radial-gradient(
-          circle at top left,
-          #f37261 -15%,
-          transparent 33%
-        ),
-        linear-gradient(to top, #842cf2 -15%, transparent 15%) #000000;
+      background: linear-gradient(to bottom, #191cee -15%, transparent 0%),
+        linear-gradient(to top, #020202 -15%, transparent 15%) #101291;
       background-attachment: fixed;
       height: 100px;
       width: 210px;
@@ -41,14 +37,36 @@
 
       .profile {
         img {
-          height: 190px;
-          width: 190px;
+          height: 240px;
           border-radius: 30px;
         }
+        background-color: #ff952a;
+        padding: 0;
+        height: 190px;
+        width: 190px;
         position: absolute;
         top: 125px;
         border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
       }
+    }
+
+    .home-page {
+      background: linear-gradient(to bottom, #1618cd 0%, #1417c1 30%);
+    }
+
+    .projects-page {
+      background-color: #1ce6e9;
+    }
+
+    .cv-page {
+      background: linear-gradient(to bottom, #701f29 0%, #701f29 30%);
+    }
+
+    .contact-page {
+      background: linear-gradient(to bottom, #3e6ed7 0%, #3e6ed7 30%);
     }
 
     .bx3 {
