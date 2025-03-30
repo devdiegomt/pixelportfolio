@@ -31,6 +31,7 @@
   width: 160px;
   height: 160px;
   top: 950px;
+  left: -150px;
 }
 .circle4 {
   width: 440px;
@@ -42,13 +43,13 @@
   width: 662px;
   height: 662px;
   top: 1540px;
-  left: -580px;
+  left: -610px;
 }
 .circle6 {
   width: 170px;
   height: 170px;
   top: 2540px;
-  left: 500px;
+  left: 515px;
 }
 
 @media (min-width: 620px) {
@@ -66,7 +67,6 @@
     left: 1370px;
   }
   .circle5 {
-    top: 1540px;
     left: -480px;
   }
   .circle6 {
