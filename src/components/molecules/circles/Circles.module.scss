@@ -1,0 +1,213 @@
+.circles {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 5px 5px 12px 1px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+  z-index: -1;
+  background: linear-gradient(to bottom, #191cee 0%, #738dfb 100%);
+}
+
+$circle-positions: (
+  home: (
+    circle1: (
+      width: 500px,
+      height: 500px,
+      top: -370px,
+      left: -370px,
+    ),
+    circle2: (
+      width: 145px,
+      height: 145px,
+      top: 159px,
+      left: 92%,
+    ),
+    circle3: (
+      width: 160px,
+      height: 160px,
+      top: 950px,
+      left: -100px,
+    ),
+    circle4: (
+      width: 440px,
+      height: 440px,
+      top: 870px,
+      left: 450px,
+    ),
+    circle5: (
+      width: 662px,
+      height: 662px,
+      top: 1540px,
+      left: -590px,
+    ),
+    circle6: (
+      width: 170px,
+      height: 170px,
+      top: 2540px,
+      left: 90%,
+    ),
+  ),
+  projects: (
+    circle1: (
+      width: 500px,
+      height: 500px,
+      top: 170px,
+      left: -190px,
+    ),
+    circle2: (
+      width: 145px,
+      height: 145px,
+      top: -70px,
+      left: 80%,
+    ),
+    circle3: (
+      width: 160px,
+      height: 160px,
+      top: 1150px,
+      left: 20%,
+    ),
+    circle4: (
+      width: 440px,
+      height: 440px,
+      top: 700px,
+      left: 83%,
+    ),
+    circle5: (
+      width: 662px,
+      height: 662px,
+      top: 1740px,
+      left: -500px,
+    ),
+    circle6: (
+      width: 170px,
+      height: 170px,
+      top: 2000px,
+      left: 90%,
+    ),
+  ),
+  cv: (
+    circle1: (
+      width: 500px,
+      height: 500px,
+      top: -350px,
+      left: 50px,
+    ),
+    circle2: (
+      width: 145px,
+      height: 145px,
+      top: 150px,
+      left: 70%,
+    ),
+    circle3: (
+      width: 160px,
+      height: 160px,
+      top: 400px,
+      left: -70px,
+    ),
+    circle4: (
+      width: 440px,
+      height: 440px,
+      top: 550px,
+      left: 83%,
+    ),
+    circle5: (
+      width: 662px,
+      height: 662px,
+      top: 740px,
+      left: -350px,
+    ),
+    circle6: (
+      width: 170px,
+      height: 170px,
+      top: 1300px,
+      left: 90%,
+    ),
+  ),
+  contact: (
+    circle1: (
+      width: 500px,
+      height: 500px,
+      top: -350px,
+      left: 0px,
+    ),
+    circle2: (
+      width: 145px,
+      height: 145px,
+      top: 150px,
+      left: 70%,
+    ),
+    circle3: (
+      width: 160px,
+      height: 160px,
+      top: 400px,
+      left: 70px,
+    ),
+    circle4: (
+      width: 440px,
+      height: 440px,
+      top: 350px,
+      left: 90%,
+    ),
+    circle5: (
+      width: 662px,
+      height: 662px,
+      top: 1040px,
+      left: -350px,
+    ),
+    circle6: (
+      width: 170px,
+      height: 170px,
+      top: 1100px,
+      left: 80%,
+    ),
+  ),
+);
+
+@each $page, $circles in $circle-positions {
+  @each $circle, $props in $circles {
+    .#{$page}-#{$circle} {
+      @each $prop, $value in $props {
+        #{$prop}: $value;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-circle1 {
+    top: -240px;
+    left: -310px;
+  }
+  .home-circle2 {
+    left: 90%;
+  }
+  .home-circle3 {
+    left: 7%;
+  }
+  .home-circle4 {
+    left: 90%;
+  }
+  .home-circle5 {
+    left: -480px;
+  }
+  .home-circle6 {
+    left: 88%;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 1200px) {
+  .home-circle2 {
+    left: 750px;
+  }
+  .home-circle3 {
+    left: 7%;
+  }
+  .home-circle4 {
+    left: 800px;
+  }
+  .home-circle5 {
+    left: -480px;
+  }
+  .home-circle6 {
+    left: 735px;
+  }
+}

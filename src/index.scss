@@ -23,6 +23,7 @@ body {
     $background-mid1 80%,
     $background-btm 100%
   );
+  background-attachment: fixed;
 }
 
 .projects-page {
@@ -32,7 +33,8 @@ body {
     $background-mid2 20%,
     $background-mid2 80%,
     $background-btm 100%
-  );
+    );
+    background-attachment: fixed;
 }
 
 .cv-page {
@@ -43,6 +45,7 @@ body {
     $background-mid3 80%,
     $background-btm 100%
   );
+  background-attachment: fixed;
 }
 
 .contact-page {
@@ -53,6 +56,7 @@ body {
     $background-mid4 80%,
     $background-btm 130%
   );
+  background-attachment: fixed;
 }
 
 /* @media (max-width: 1200px) {

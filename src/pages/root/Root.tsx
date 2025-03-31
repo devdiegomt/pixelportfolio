@@ -1,10 +1,13 @@
 import { Outlet, useLocation } from "react-router-dom";
 import classes from "./Root.module.scss";
 import MainNavigation from "../../components/organisms/navigation/MainNavigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Circles from "../../components/molecules/circles/Circles";
+import { homeCirclesClasses } from "../../config/circles";
 
 export default function RootLayout() {
   const location = useLocation();
+  const [pathName, setPathName] = useState<string | undefined>();
 
   useEffect(() => {
     const bodyClass =
@@ -18,8 +21,8 @@ export default function RootLayout() {
         ? "projects-page"
         : "default-page";
 
+    setPathName(bodyClass);
     document.body.className = bodyClass;
-
     return () => {
       document.body.className = "";
     };
@@ -27,12 +30,7 @@ export default function RootLayout() {
 
   return (
     <>
-      <div className={`${classes.circles} ${classes.circle1}`}></div>
-      <div className={`${classes.circles} ${classes.circle2}`}></div>
-      <div className={`${classes.circles} ${classes.circle3}`}></div>
-      <div className={`${classes.circles} ${classes.circle4}`}></div>
-      <div className={`${classes.circles} ${classes.circle5}`}></div>
-      <div className={`${classes.circles} ${classes.circle6}`}></div>
+      <Circles circleClasses={homeCirclesClasses} pathName={pathName!} />
       <MainNavigation />
       <main className={classes.root}>
         <Outlet />
