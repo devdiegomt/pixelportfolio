@@ -1,5 +1,5 @@
 // Image
-import profileImg from "../../../assets/images/profile.png";
+import profileImg from "../../../assets/images/profile.svg";
 
 // Components
 import Social from "../../molecules/social/Social";

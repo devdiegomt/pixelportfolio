@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./ProjectCard.module.scss";
 import { motion } from "framer-motion";
 
@@ -29,10 +28,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     >
       {link !== "" ? (
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <img src={image} alt={title} />
+          <img className={classes["project-img"]} src={image} alt={title} />
         </a>
       ) : (
-        <img src={image} alt={title} />
+        <img className={classes["project-img"]} src={image} alt={title} />
       )}
       <h1 className={classes["project-name"]}>{title}</h1>
       <p className={classes.description}>

@@ -43,7 +43,7 @@ const Circles: React.FC<CirclesProps> = ({ circleClasses, pathName }) => {
             key={circleClass.id}
             layoutId={`circle-${circleClass.id}`}
             className={`${circleClass.commonClass} ${circlePath}`}
-            transition={{ type: "spring", stiffness: 500, damping: 30 }}
+            transition={{ type: "spring", stiffness: 500, damping: 50 }}
           />
         );
       })}

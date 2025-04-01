@@ -1,12 +1,12 @@
-import cintelLogo from "../assets/work/cintel.png";
-import nttLogo from "../assets/work/ntt.png";
-import glaLogo from "../assets/work/gla.png";
-import freelanceLogo from "../assets/work/freelance.png";
+import cintelLogo from "../assets/work/cintel.svg";
+import nttLogo from "../assets/work/ntt.svg";
+import glaLogo from "../assets/work/gla.svg";
+/* import freelanceLogo from "../assets/work/freelance.png"; */
 
-import aecLogo from "../assets/certificates/aec.png";
-import microsoftLogo from "../assets/certificates/microsoft.png";
-import scrumSLogo from "../assets/certificates/scrums.png";
-import udemyLogo from "../assets/certificates/udemy.png";
+import aecLogo from "../assets/certificates/aec.svg";
+import microsoftLogo from "../assets/certificates/microsoft.svg";
+import scrumSLogo from "../assets/certificates/scrums.svg";
+import udemyLogo from "../assets/certificates/udemy.svg";
 
 export const EDUCATION = [
     {
@@ -26,7 +26,7 @@ export const EDUCATION = [
 export const EXPERIENCE = [
     {
         id: "x1",
-        img: freelanceLogo,
+        /* img: freelanceLogo, */
         name: "Freelance",
         period: "Nov. 2024 - Current",
         role: "Fullstack developer",
