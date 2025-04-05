@@ -1,9 +1,9 @@
 // Project images
 
-import tictactoeImg from "../assets/projects-images/tictactoe.svg";
-import foodiesImg from "../assets/projects-images/foodies.svg";
-import schoolImg from "../assets/projects-images/school.svg";
-import mundoGatunoImg from "../assets/projects-images/gatuno.svg";
+import tictactoeImg from "../assets/projects-images/tictactoe.webp";
+import foodiesImg from "../assets/projects-images/foodies.webp";
+import schoolImg from "../assets/projects-images/school.webp";
+import mundoGatunoImg from "../assets/projects-images/gatuno.webp";
 
 // Project logos
 

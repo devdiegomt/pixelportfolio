@@ -1,10 +1,10 @@
 // Image
-import profileImg from "../../../assets/images/profile.svg";
+import profileImg from "../../../assets/images/profile.webp";
 
 // Components
 import Social from "../../molecules/social/Social";
 import NavItem from "../../molecules/navigation/NavItem";
-import Quotes from "../../molecules/quotes/Quotes";
+import Quotes from "./quotes/Quotes";
 
 // Styles
 import classes from "./MainNavigation.module.scss";
