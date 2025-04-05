@@ -1,6 +1,6 @@
 import classes from "./CV.module.scss";
 import myCV from "../../assets/cv/DiegoMayorgaCV.pdf";
-import cv from "../../assets/cv/cv.png";
+import cv from "../../assets/cv/cv.webp";
 
 export default function CV() {
   return (
